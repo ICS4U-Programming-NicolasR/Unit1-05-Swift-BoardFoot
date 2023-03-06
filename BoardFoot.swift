@@ -15,10 +15,10 @@ func lengthCalc(height: Double, width: Double) -> Double {
     return LENGTH
 }
 print("What is the height(in)?")
-if let HEIGHT_USR = Double(readLine()!) {
+if let heightUsr = Double(readLine()!) {
     print("What is the width(in)?")
-    if let WIDTH_USR = Double(readLine()!) {
-        let lengthTot = lengthCalc(height: HEIGHT_USR, width: WIDTH_USR)
+    if let widthUsr = Double(readLine()!) {
+        let lengthTot = lengthCalc(height: heightUsr, width: widthUsr)
         print("Your total length is \(lengthTot) in")
     } else {
         print("You have entered an invalid input")
