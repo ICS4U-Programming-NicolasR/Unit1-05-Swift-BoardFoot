@@ -18,8 +18,12 @@ print("What is the height(in)?")
 if let heightUsr = Double(readLine()!) {
     print("What is the width(in)?")
     if let widthUsr = Double(readLine()!) {
-        let lengthTot = lengthCalc(height: heightUsr, width: widthUsr)
-        print("Your total length is \(lengthTot) in")
+        if heightUsr > 0 && widthUsr > 0 {
+            let lengthTot = lengthCalc(height: heightUsr, width: widthUsr)
+            print("Your total length is \(lengthTot) in")
+        } else {
+            print("you have entered a negative value")
+        }
     } else {
         print("You have entered an invalid input")
     }
